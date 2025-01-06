@@ -84,7 +84,13 @@ WHERE stream > 1000000000;
 		artist
 	FROM spotify;
 ```
-4. Get the total number of comments for tracks where `licensed = TRUE`.
+3. Get the total number of comments for tracks where `licensed = TRUE`.
+   ```sql
+   SELECT 
+	* 
+   FROM spotify
+   WHERE album_type = 'single';
+   ```
 5. Find all tracks that belong to the album type `single`.
 6. Count the total number of tracks by each artist.
 
