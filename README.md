@@ -92,31 +92,31 @@ WHERE stream > 1000000000;
    WHERE licensed = 'true'
  ```
 4. Find all tracks that belong to the album type `single`.
-```sql
-SELECT * 
-FROM spotify
-WHERE album_type = 'single';
+   ```sql
+	SELECT * 
+	FROM spotify
+	WHERE album_type = 'single';
 ```
 5. Count the total number of tracks by each artist.
    ``` sql
-SELECT 
-	distinct artist,
-	count(track)
-FROM spotify
-GROUP BY 1
-ORDER BY 2 ;
+	SELECT 
+		distinct artist,
+		count(track)
+	FROM spotify
+	GROUP BY 1
+	ORDER BY 2 ;
    ```
 
 ### Medium Level
 1. Calculate the average danceability of tracks in each album.
 ``` sql
-SELECT 
-	album,
-	track,
-	avg(danceability) AS avg_danceability
-FROM spotify
-GROUP BY 1,2
-ORDER BY 3 DESC;
+	SELECT 
+		album,
+		track,
+		avg(danceability) AS avg_danceability
+	FROM spotify
+	GROUP BY 1,2
+	ORDER BY 3 DESC;
 
 ```
 2. Find the top 5 tracks with the highest energy values.
