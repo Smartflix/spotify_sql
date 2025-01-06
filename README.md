@@ -91,10 +91,9 @@ WHERE stream > 1000000000;
 	from spotify
    WHERE licensed = 'true'
  ```
-## 4. Find all tracks that belong to the album type `single`.
+4. Find all tracks that belong to the album type `single`.
 ```sql
-SELECT 
-	* 
+SELECT * 
 FROM spotify
 WHERE album_type = 'single';
 ```
@@ -143,12 +142,11 @@ ORDER BY 2 DESC;
 ```
 4. For each album, calculate the total views of all associated tracks`.
 ```sql
-SELECT 
-	* 
+SELECT * 
 FROM spotify
 WHERE album_type = 'single';
 ```
-6. Retrieve the track names that have been streamed on Spotify more than YouTube.
+5. Retrieve the track names that have been streamed on Spotify more than YouTube.
 ```sql
 select distinct most_played_on from spotify
 SELECT * FROM
