@@ -92,7 +92,7 @@ WHERE stream > 1000000000;
    WHERE licensed = 'true'
  ```
 4. Find all tracks that belong to the album type `single`.
-   ```sql
+ ```sql
 	SELECT * 
 	FROM spotify
 	WHERE album_type = 'single';
