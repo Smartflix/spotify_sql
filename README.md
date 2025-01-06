@@ -88,9 +88,9 @@ WHERE stream > 1000000000;
    ```sql
    SELECT
 	sum(comments)
-from spotify
-WHERE licensed = 'true'
-   ```
+	from spotify
+   WHERE licensed = 'true'
+ ```
 4. Find all tracks that belong to the album type `single`.
 ```sql
 SELECT 
