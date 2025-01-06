@@ -110,7 +110,7 @@ ORDER BY 2 ;
 
 ### Medium Level
 1. Calculate the average danceability of tracks in each album.
-```sql
+``` sql
 SELECT 
 	album,
 	track,
@@ -118,10 +118,10 @@ SELECT
 FROM spotify
 GROUP BY 1,2
 ORDER BY 3 DESC;
-SELECT * FROM spotify
+
 ```
 2. Find the top 5 tracks with the highest energy values.
-```sql
+``` sql
 SELECT
 	track,
 	ROUND(max(energy_liveness)::"numeric",2)
