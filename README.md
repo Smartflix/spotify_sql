@@ -144,14 +144,11 @@ ORDER BY 2 DESC;
 4. For each album, calculate the total views of all associated tracks.
 ```sql
 SELECT 
-	album,
-	track,
-sum(views)as Total_views
+	* 
 FROM spotify
-GROUP BY 1,2
-ORDER by 3 DESC;
+WHERE album_type = 'single';
 ```
-5. Retrieve the track names that have been streamed on Spotify more than YouTube.
+6. Retrieve the track names that have been streamed on Spotify more than YouTube.
 ```sql
 select distinct most_played_on from spotify
 SELECT * FROM
