@@ -142,7 +142,8 @@ ORDER BY 2 DESC;
 ```
 4. For each album, calculate the total views of all associated tracks`.
 ```sql
-SELECT * 
+SELECT
+	* 
 FROM spotify
 WHERE album_type = 'single';
 ```
